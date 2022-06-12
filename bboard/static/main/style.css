@@ -1,0 +1,17 @@
+h1{
+    background: url('bg.jpg') left / auto 100% no-repeat;
+    color: rgb(70, 5, 190);
+    font-size: 30;
+}
+
+.root {
+    font-size: 20;
+}
+
+img.main-image {
+    width: 300px;
+}
+
+img.additional-image{
+    width: 180px;
+}
