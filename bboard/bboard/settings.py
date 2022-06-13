@@ -41,6 +41,11 @@ INSTALLED_APPS = [
     'django_cleanup',
     'easy_thumbnails',
     'captcha',
+
+    'api',
+    'rest_framework',
+    'corsheaders',
+
 ]
 
 MIDDLEWARE = [
@@ -51,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'bboard.urls'
@@ -145,3 +152,8 @@ THUMBNAIL_ALIASES = {
     },
 }
 THUMBNAIL_BASEDIR = 'thumbnails'
+
+
+""""Разрешает веб службам доступ с любого домена """
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_URL_REGEX = r'^/api/.*$'
