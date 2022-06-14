@@ -135,8 +135,8 @@ AUTH_USER_MODEL = 'main.AdvUser'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'vp3231963@gmail.com'
-EMAIL_HOST_PASSWORD = 'dinamo258'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
